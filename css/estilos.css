@@ -9,22 +9,86 @@ html {
     font-family: 'Domine', serif;
 }
 
-header {
-    background-color: #2c2c2c;
+a{
+    color: white;
 }
 
-header ul > li {
+h1{
+    height: 100px;
+    font-size: 5rem;
+    padding: 25px;
+    text-align: center;
+    color: gold;
+}
+
+h2{
+    font-size: 4rem;
+}
+
+header {
+    width: 100%;
+    background-color: #2c2c2c;
+    height: 100px;
+    position: fixed;
+    z-index: 2;
+}
+
+li{
+    list-style-type: none;
+    padding: 10px;
+}
+
+.menu {
+    height: 100%;
+    font-size: 2rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu .item-menu{
     display: inline-block;
+    margin: 20px 20px;
+}
+
+.menu .item-menu:hover{
+    background-color: #505050;
+}
+
+.subitem-menu{
+    display: none;
+}
+
+#notas-menu:hover > .subitem-menu{
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    background-color: #505050;
 }
 
 body {
     background-color: #0f0f0f;
 }
 
+main{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    top: 12.5rem;
+}
+
+section {
+    margin: 2.5rem;
+}
+
 section {
     background-color: #1f1f1f;
+    padding: 2.5rem;
 }
 
 article {
     background-color: #505050;
+}
+
+#bienvenido {
+    height: calc(100vh - 27.5rem);
 }
