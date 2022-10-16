@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 10px;
+}
+body{
+    font-size: 2rem;
+    color: white;
+}
+header{
+    height: 10rem;
+    background-color: purple;
+}
+nav {
+    margin: 3rem 1rem 1rem 1rem;
+    height: 3rem;
+    background-color: orangered;
+}
+main {
+    min-height: calc(100vh - 20rem);
+    background-color: #333;
+    display: flex;
+}
+footer {
+    height: 10rem;
+    background-color: purple;
+}
+div {
+    width: 50%;
+    background-color: black;
+    display: inline-block;
+}
+div section{
+    width: 100%;
+    height: calc(50vh - 100px);
+    border:1px solid orangered;
+}
+article {
+    display: inline-block;
+    width: 50%;
+    height: calc(100vh - 200px);;
+    background-color: #666;
+    padding: 20px;
+}
