@@ -15,7 +15,6 @@ header{
     height: 5rem;
     width: 100%;
     background-color: purple;
-    position: relative;
     /* position: fixed;
     top: 0; */
 }
@@ -24,12 +23,16 @@ nav {
     background-color: orangered;
     position: sticky;
     top: -0.1rem;
+    z-index: 99;
 }
 main {
     min-height: calc(100vh - 20rem);
     background-color: #333;
     display: flex;
     /* margin-top: 10rem; */
+}
+section {
+    padding: 10px;
 }
 footer {
     height: 10rem;
@@ -44,8 +47,15 @@ div section{
     width: 100%;
     min-height: calc(50vh - 10rem);
     border:0.1rem solid orangered;
-    padding: 10px;
 }
+div section:nth-child(1){
+    position: relative;
+}
+/* div section p:first-of-type{
+    background-color: black;
+    position: relative;
+    right: -20px;
+} */
 article {
     display: inline-block;
     width: 50%;
@@ -53,6 +63,7 @@ article {
     background-color: #666;
     padding: 2rem;
     border: 0.1rem solid orangered;
+    position: relative;
 }
 article section {
     width: 100%;
@@ -60,6 +71,24 @@ article section {
     background-color: #333;
     margin-bottom: 1rem;
     border: 0.1rem solid orangered;
+    position: sticky;
+    top: 5rem;
+}
+
+article section:nth-child(2){
+    padding-top: 2.5rem;
+}
+
+article h2 {
+    width: 18rem;
+    text-align: center;
+    position: relative;
+    top: 15px;
+    z-index: 1;
+    background-color: orangered;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);    
 }
 main p{
     font-size: 1.8rem;
