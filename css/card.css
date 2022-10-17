@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    background-color: #333;
+}
+
+.contenedor {
+    width: 90%;
+    position: relative;
+    max-width: 720px;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #161616;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contenedor div {
+    width: 100%;
+}
+
+.contenedor .portada img{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.contenedor .foto-perfil{
+    width: 25%;
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    background-color: #FF3CAC;
+    background-image: linear-gradient(180deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+    box-shadow: 1px 1px 5px 2px purple;
+}
+
+.contenedor .foto-perfil img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.contenedor .acciones {
+    height: 60px;
+    display: flex;
+    margin-top: -3px;
+}
+
+.contenedor .acciones button{
+    width: 50%;
+    border: unset;  
+    font-weight: bold;
+    font-size: 2rem;
+    background: purple;
+    color: white;
+}
+
+.contenedor .acciones button:nth-child(1){
+    padding-right: 10%;
+}
+
+.contenedor .acciones button:nth-child(2){
+    padding-left: 10%;
+}
+
+.contenedor .acciones button:hover {
+    cursor: pointer;
+    color: purple;
+    background: rgb(40,0,34);
+    background: linear-gradient(180deg, rgba(40,0,34,1) 0%, rgba(55,1,53,1) 49%);
+}
+
+.contenedor .nickname {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contenedor .nickname p:nth-child(1){
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+}
+
+.contenedor .nickname p:nth-child(2){
+    font-size: 1.8rem;
+    color: #616666;
+}
+
+.contenedor .redes{
+    display: flex;
+    justify-content: center;
+    font-size: 5rem;
+    padding: 0px 20px 20px 20px;
+}
+
+.contenedor .redes i{
+    padding: 20px;
+    color: white;
+}
